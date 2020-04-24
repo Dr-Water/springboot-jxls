@@ -10,8 +10,6 @@ import org.jxls.util.JxlsHelper;
 
 /**
  * 简单表格--动态列的数据以及列的字段类型
- * 感觉设置的格式没啥用
- * @author chendd
  */
 public class T1 {
 
