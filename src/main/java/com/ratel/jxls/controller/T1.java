@@ -27,11 +27,11 @@ public class T1 {
         dataList.add(data3);
         //载入模板
         //InputStream is = T1.class.getClass().getResourceAsStream("/cn/chendd/examples/templates/simpleGrid.xls");
-        FileInputStream is = new FileInputStream(new File("F:\\templates\\竖列模板.xlsx"));
+        FileInputStream is = new FileInputStream(new File("src/main/resources/templates/竖列模板2.xlsx"));
         Context context = new Context();
         context.putVar("headers", Arrays.asList("姓名" , "性别" , "年龄"));
         context.putVar("dataList", dataList);
-        OutputStream os = new FileOutputStream(new File("F:\\templates\\result3.xlsx"));
+        OutputStream os = new FileOutputStream(new File("F:\\templates\\result4.xlsx"));
         //指定Sheet文件解析
         JxlsHelper.getInstance().processTemplate(is, os, context);
         os.flush();
